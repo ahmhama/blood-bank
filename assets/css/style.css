@@ -1,0 +1,987 @@
+.header-latest-blog-post, .header-donor-feedback, .header-our-volunteers {
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 1.4px;
+}
+
+.latest-blog-post .heart-rate, .header-donor-feedback .heart-rate, .our-volunteers .heart-rate {
+    margin-bottom: 50px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                                    main                                    */
+
+/* -------------------------------------------------------------------------- */
+
+.main {
+    height: 100vh;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                              swiper Slider css                             */
+
+/* -------------------------------------------------------------------------- */
+
+.main .swiper-container {
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+    position: relative;
+}
+
+.main .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.main .swiper-slide .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.main .swiper-pagination-bullet {
+    padding: 0px 0px !important;
+    border-radius: 0;
+    width: auto;
+    height: 0px !important;
+}
+
+.main .swiper-pagination-bullet-active .path {
+    display: inline-block !important;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    animation: dash linear 120s;
+    animation-iteration-count: unset;
+}
+
+.main .path {
+    display: none;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.main .slide-background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main .slide-background-1 {
+    background-image: url("../images/slode1.jpg");
+}
+
+.main .slide-background-2 {
+    background-image: url("https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+}
+
+.main .slide-background-3 {
+    background-image: url("../images/slide2.jpg");
+}
+
+.main .slide-caption {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    transform: translate(0%, -50%);
+    text-align: left;
+}
+
+.main .slide-caption h2 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.main .slide-caption p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #F4F4F4 !important;
+    letter-spacing: 1px;
+}
+
+.main .btn-donate {
+    background-color: #FF3D48 !important;
+    color: #fff;
+    margin-right: 20px;
+    width: 160px;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.main .btn-readmore {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 140px;
+    height: 45px;
+    border-radius: 0!important;
+    font-size: 15px;
+}
+
+.main .btn:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.main .btn-readmore:hover {
+    background-color: #FF3D48;
+    border: none;
+    color: #fff;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                                    about                                   */
+
+/* -------------------------------------------------------------------------- */
+
+.about {
+    padding: 70px 0px;
+}
+
+.about-left-side img {
+    width: 95%;
+    height: 360px;
+    padding: 0;
+    margin: 0;
+}
+
+.header-about {
+    margin-bottom: 20px;
+}
+
+.about-right-side {
+    padding-top: 10px;
+}
+
+.about-right-side ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.about-right-side ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    line-height: 2.3;
+}
+
+.about-right-side ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #FF3D48 !important;
+}
+
+.btn-about {
+    width: 160px;
+    margin-right: 0px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    background-color: #FF3D48 !important;
+    color: #242424;
+    -webkit-transition: ease-out .4s;
+    -moz-transition: ease-out .4s;
+    -o-transition: ease-out .4s;
+    transition: ease-out .4s;
+}
+
+.btn-about:hover {
+    color: #F4F4F4;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                                   causes                                   */
+
+/* -------------------------------------------------------------------------- */
+
+.causes {
+    padding: 70px 0px;
+    background-color: #F4F4F4
+}
+
+.header-causes h3 {
+    font-weight: bolder;
+    font-size: 35px;
+    position: relative;
+    padding-bottom: 7px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-causes h3::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 47px;
+    background-color: #FF3D48;
+    left: 0;
+    bottom: 0;
+}
+
+.list-causes {
+    padding: 20px 0px;
+}
+
+.list-causes ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list-causes ul li h4 {
+    font-weight: 900;
+    font-size: 21px;
+}
+
+.list-causes ul li p {
+    padding: 6px 15px 6px 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                              rightside causes                              */
+
+/* -------------------------------------------------------------------------- */
+
+.rightside-causer {
+    padding: 0px 20px;
+}
+
+.request-list {
+    width: 65%;
+    margin-top: 30px;
+}
+
+.request-list .list-group-item {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.request-list .list-group-item svg {
+    margin-right: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                                 our_donors                                 */
+
+/* -------------------------------------------------------------------------- */
+
+.our_donors {
+    padding: 70px 0px;
+    background-color: #097FFB;
+    color: #fff;
+}
+
+.our_donors svg {
+    margin-bottom: 9px;
+}
+
+.external-container h3 {
+    font-weight: 800;
+    padding: 7px 0px 0px;
+}
+
+.external-container p {
+    padding: 0;
+    margin: 0;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #F4F4F4 !important;
+    letter-spacing: 1.2px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                               health-benefits                              */
+
+/* -------------------------------------------------------------------------- */
+
+
+.leftside-health-benefits img {
+    width: 100%;
+    height: 420px;
+}
+
+
+.header-health-benefits {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 30px;
+}
+.health-benefits2-right-side p ,.health-benefits-right-side p{
+    line-height: 2em;
+}
+
+.health-benefits-right-side {
+    padding-top: 45px;
+    margin-right: 100px;
+    margin-left: 25px;
+}
+
+.health-benefits-right-side ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.health-benefits-right-side ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    line-height: 2;
+}
+
+.health-benefits-right-side ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #4c4c4c !important;
+}
+
+.btn-health-benefits {
+    width: 160px;
+    margin-right: 0px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    background-color: #FF3D48 !important;
+    color: #242424;
+    margin-bottom: 25px;
+    -webkit-transition: ease-out .4s;
+    -moz-transition: ease-out .4s;
+    -o-transition: ease-out .4s;
+    transition: ease-out .4s;
+}
+
+.btn-health-benefits:hover {
+    color: #F4F4F4;
+}
+
+.health-benefits2-right-side {
+    padding-top: 45px;
+    padding-left: 100px;
+    margin-right: 25px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                                  help-save                                 */
+
+/* -------------------------------------------------------------------------- */
+
+.help-save {
+    padding: 70px 0px;
+    background-color: #097FFB;
+    color: #fff;
+}
+
+.help-save h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.help-save p {
+    padding: 0px 180px;
+}
+
+.help-save .btn-help-save {
+    display: inline-block;
+    width: 220px !important;
+    line-height: 45px;
+    text-decoration: none;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    background-color: #FF3D48 !important;
+    color: #fff;
+    margin-bottom: 0px;
+    outline: none;
+    border: none;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                               our volunteers                               */
+
+/* -------------------------------------------------------------------------- */
+
+.our-volunteers {
+    padding: 70px 0;
+    background-color: #f4f4f4;
+}
+.our-volunteers .card{
+    margin-bottom: 15px;
+}
+.our-volunteers .card:hover {
+    background-color: #097FFB;
+    -webkit-transition: ease-out .7s;
+    -moz-transition: ease-out .7s;
+    -o-transition: ease-out .7s;
+    transition: ease-out .7s;
+}
+
+.cardimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px 20px;
+}
+
+.our-volunteers .card-img-top {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #FF3D48;
+}
+
+.blood-type{
+    position: relative;
+}
+.blood-type-person:hover{
+    cursor: default;
+}
+.blood-type-person{
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    border: 2px solid #FF3D48;
+    width: 35px;
+    border-radius: 50%;
+    height: 35px;
+    background-color: #fff;
+    z-index: 99999;
+    top: 3%;
+    right:7%;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.card-title {
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.card .btn-scial {
+    background-color: #242424 !important;
+    display: inline-block;
+    width: 34px;
+    padding: 6px 0px;
+    margin: 2px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 700;
+    -webkit-transition: ease-out .7s;
+    -moz-transition: ease-out .7s;
+    -o-transition: ease-out .7s;
+    transition: ease-out .7s;
+}
+
+.card a:hover {
+    background-color: #ff3d48 !important;
+}
+
+.card a i {
+    color: #fff;
+    font-size: 14px;
+}
+
+.our-volunteers .card:hover .card-title, .our-volunteers .card:hover .card-text {
+    color: #F4F4F4 !important;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                                 find-blood                                 */
+
+/* -------------------------------------------------------------------------- */
+
+.find-blood {
+    padding: 70px 0px;
+}
+
+form {
+    padding-top: 20px;
+}
+
+.header-find-blood h3 {
+    font-weight: bolder;
+    font-size: 35px;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.header-find-blood h3::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 47px;
+    background-color: #FF3D48;
+    left: 0;
+    bottom: 0;
+}
+
+.find-blood form input, .find-blood form #messige {
+    border: 0;
+    background: transparent;
+    outline: none;
+    -webkit-box-shadow: -4px 5px 8px 0px rgba(237, 237, 237, 1);
+    -moz-box-shadow: -4px 5px 8px 0px rgba(237, 237, 237, 1);
+    box-shadow: -4px 5px 8px 0px rgba(237, 237, 237, 1);
+}
+
+.find-blood form #messige {
+    width: 100%;
+    height: 180px;
+    resize:none;
+    margin-top: 15px;
+}
+.form-control:focus {
+    color: none;
+    background-color: #fff;
+    border-color: none;
+    outline: 0;
+    -webkit-box-shadow: -4px 5px 8px 0px rgba(233, 224, 224, 1);
+    -moz-box-shadow: -4px 5px 8px 0px rgba(233, 224, 224, 1);
+    box-shadow: -4px 5px 8px 0px rgba(233, 224, 224, 1);
+}
+
+.btn-submit {
+    width: 200px;
+    margin-right: 0px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    background-color: #FF3D48 !important;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                               find-blood-left                              */
+
+/* -------------------------------------------------------------------------- */
+
+.find-blood-left img {
+    width: 100%;
+    height: 500px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                                   join-us                                  */
+
+/* -------------------------------------------------------------------------- */
+
+.join-us {
+    padding: 70px 0px;
+    background-color: #097FFB;
+    color: #fff;
+}
+
+.join-us-header {
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.join-us-btn {
+    text-align: right;
+}
+
+.btn-join-us {
+    width: 160px;
+    margin-right: 0px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    background-color: #FE3C49;
+    color: #ffffff;
+}
+
+.donate-your-blood p {
+    margin-bottom: 0;
+    line-height: 1.8em;
+    color: #F4F4F4 !important;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                               donor-feedback                               */
+
+/* -------------------------------------------------------------------------- */
+
+.donor-feedback {
+    padding: 70px 0px;
+    background-color: #f4f4f4;
+}
+
+.donor-feedback .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.donor-feedback .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #f4f4f4;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.donor-feedback .col-lg-9 {
+    text-align: left;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center
+}
+
+.feedback-img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+.text-feedback {
+    position: relative;
+}
+
+.text-feedback::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #FF3D48;
+    left: -30px;
+    border-radius: 5px;
+}
+
+.name-feedback {
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 15px;
+}
+
+.name-feedback span {
+    position: relative;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.name-feedback span::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #313131;
+    top: 50%;
+    right: 70%;
+    transform: translate(-70%,-50%);
+    border-radius: 3px;
+}
+
+.fa-quote-left {
+    padding-bottom: 10px;
+    font-size: 22px;
+    color: #FE3C49;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*                              latest-blog-post                              */
+
+/* -------------------------------------------------------------------------- */
+
+.latest-blog-post {
+    padding: 70px 10px
+}
+
+.latest-blog-post .card {
+    border: none !important;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 28px;
+}
+
+.latest-blog-post .card img {
+    height: 250px;
+}
+
+.img-zoom {
+    overflow: hidden;
+}
+
+.img-zoom .card-img-top {
+    transition: transform .5s ease;
+}
+
+.latest-blog-post .card:hover .card-img-top {
+    transform: scale(1.12);
+}
+
+.latest-blog-post .img-card {
+    position: relative;
+}
+
+.latest-blog-post .card .date {
+    width: 65px;
+    height: 65px;
+    background-color: #FF3D48;
+    position: absolute;
+    right: 20px;
+    bottom: -30px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fffeff;
+}
+
+.latest-blog-post .card .date .day {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.latest-blog-post .card .date .month {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+
+.latest-blog-post .create-by p {
+    margin-bottom: 5px !important;
+}
+
+.latest-blog-post .create-by p .admin {
+    color: #FF3D48;
+    font-size: 15px;
+    font-weight: 900 !important;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+.latest-blog-post .card h6 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.latest-blog-post .card .card-text {
+    color: #848484;
+}
+
+.latest-blog-post .read-more-post {
+    color: #FF3D48;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.latest-blog-post .read-more-post:hover {
+    -webkit-transition: ease-out .7s;
+    -moz-transition: ease-out .7s;
+    -o-transition: ease-out .7s;
+    transition: ease-out .7s;
+    color: #242424;
+    background-color: #fff !important;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 media query                                */
+/* -------------------------------------------------------------------------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .about-right-side{
+        padding-top: 25px;
+    }
+    .header-about{
+        margin-bottom: 5px;
+    }
+    .health-benefits2-right-side{
+        padding-left: 25px !important;
+    }
+    .help-save p {
+        padding: 0px 10px;
+    }
+    .find-blood-left{
+        display: none;
+    }
+    .join-us-btn ,.donate-your-blood,.join-us-header{
+        text-align: center;
+    }
+    .donate-your-blood{
+        margin-bottom: 20px;
+    }
+    .text-feedback{
+        padding:20px
+    }
+    .text-feedback::before{
+        display: none;
+    }
+    .request-list {
+        width: 100%;
+    }
+    .external-container{
+        margin-bottom: 30px;
+    }
+    .leftside-health-benefits img {
+        width: 100%;
+        height: 270px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    health-benefits-right-side{
+        padding-top: 45px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .about-right-side{
+        padding-top: 25px;
+    }
+    .header-about{
+        margin-bottom: 5px;
+    }
+    .health-benefits2-right-side{
+        padding-left: 25px !important;
+    }
+    .request-list {
+        width: 100%;
+    }
+    .external-container{
+        margin-bottom: 30px;
+    }
+    .help-save p {
+        padding: 0px 10px;
+    }
+    .text-feedback{
+        padding:20px
+    }
+    .text-feedback::before{
+        display: none;
+    }
+    .find-blood-left{
+        display: none;
+    }
+    .join-us-btn ,.donate-your-blood,.join-us-header{
+        text-align: center;
+    }
+    .donate-your-blood{
+        margin-bottom: 20px;
+    }
+    .latest-blog-post .card img{
+        height: 300px !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .about-left-side img {
+        width: 100%;
+    }
+    .about-right-side {
+        padding-top: 0px;
+    }
+    .about-right-side ul li {
+        padding-left: 20px;
+        line-height: 1.5;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .find-blood-left{
+        display: block;
+    }
+    .find-blood-left img {
+        width: 100%;
+        height: 450px;
+    }
+     .donate-your-blood,.join-us-header{
+        text-align: left;
+    }
+    .join-us-btn{
+        text-align: right;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

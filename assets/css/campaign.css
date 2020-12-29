@@ -1,0 +1,123 @@
+.donation-campaign-post{
+    padding:70px 0px
+}
+.donation-campaign {
+    width: 100%;
+    height: 230px;
+    background-image: url(../images/team.png);
+    background-size: 100% 440px;
+    background-repeat: no-repeat;
+    background-position: center left ;
+    position: relative;
+    color: #fff;
+    display: flex;
+align-items: center;}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+
+.donation-campaign-post .card {
+    border: none !important;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 28px;
+}
+
+.donation-campaign-post .card img {
+    height: 250px;
+}
+
+.donation-campaign-post .img-card {
+    position: relative;
+}
+
+.donation-campaign-post .card .date {
+    width: 65px;
+    height: 65px;
+    background-color: #FF3D48;
+    position: absolute;
+    right: 20px;
+    bottom: -30px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fffeff;
+}
+
+.donation-campaign-post .card .date .day {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.donation-campaign-post .card .date .month {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+.donation-campaign-post .create-by{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 15px  0px  ;    
+}
+.donation-campaign-post .create-by i{
+    color: #FF3D48;
+}
+.donation-campaign-post .create-by p {
+    color: #848484;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px !important;
+}
+
+.donation-campaign-post .create-by p .admin {
+    color: #FF3D48;
+    font-size: 17px;
+    font-weight: bolder !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.donation-campaign-post .card h6 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.donation-campaign-post .card .card-text {
+    font-size: 15px;
+    color: #848484;
+}
+.person-create{
+    display: flex;
+    justify-content: space-between;
+}
+.donation-campaign-post .read-more-post {
+    color: #242424;
+    font-size: 16px;
+    font-weight: 900;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donation-campaign-post .person{
+    font-weight: 700;
+    
+}
+.donation-campaign-post .read-more-post i ,.fa-user{
+    color: #242424;
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+.donation-campaign-post .read-more-post:hover ,.read-more-post:hover i {
+    transition: 1s all;
+    color: #FF3D48 !important;
+    background-color: #fff !important;
+}
+.our-clients{
+    background-color: #F4F4F4;
+}
